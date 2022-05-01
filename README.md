@@ -5,6 +5,7 @@ My personal blog using issues and GitHub Actions (随意转载，无需署名)
 | Name | Link | Desc | 
  | ---- | ---- | ---- |
 ## 最近更新
+- [add friends links info](https://github.com/fangjian98/space/issues/8)--2022-05-01
 - [This is my third blog](https://github.com/fangjian98/space/issues/7)--2022-05-01
 - [This is my second blog](https://github.com/fangjian98/space/issues/6)--2022-05-01
 - [This is my first issue blog](https://github.com/fangjian98/space/issues/5)--2022-05-01
