@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns="http://www.w3.org/2005/Atom"><id>https://github.com/fangjian98/space</id><title>RSS feed of fangjian98's space</title><updated>2022-05-01T15:08:24.285900+00:00</updated><author><name>fangjian98</name><email>2360870585@qq.com</email></author><link href="https://github.com/fangjian98/space"/><link href="https://raw.githubusercontent.com/fangjian98/space/master/feed.xml" rel="self"/><generator uri="https://lkiesow.github.io/python-feedgen" version="0.9.0">python-feedgen</generator><entry><id>https://github.com/fangjian98/space/issues/7</id><title>This is my third blog</title><updated>2022-05-01T15:08:24.499120+00:00</updated><content type="html"><![CDATA[<h1>This is my third blog</h1>
+<p>hhh</p>
+]]></content><link href="https://github.com/fangjian98/space/issues/7" rel="alternate"/><published>2022-05-01T15:06:18+00:00</published></entry><entry><id>https://github.com/fangjian98/space/issues/6</id><title>This is my second blog</title><updated>2022-05-01T15:08:24.603725+00:00</updated><content type="html"><![CDATA[<h1>2022-05-01</h1>
+<ol>
+<li>hhh</li>
+<li>xxx</li>
+<li>uuu</li>
+</ol>
+]]></content><link href="https://github.com/fangjian98/space/issues/6" rel="alternate"/><published>2022-05-01T14:41:46+00:00</published></entry><entry><id>https://github.com/fangjian98/space/issues/5</id><title>This is my first issue blog</title><updated>2022-05-01T15:08:24.707128+00:00</updated><content type="html"><![CDATA[<h1>Day1 2022-05-01</h1>
+<ol>
+<li>Settings - Developer settings - GitHub Apps - Access Token</li>
+<li>Actions secrets</li>
+<li>修改workflow：替换分支、用户名、邮箱、AccessToken</li>
+<li>设置修改Workflow Permission</li>
+</ol>
+]]></content><link href="https://github.com/fangjian98/space/issues/5" rel="alternate"/><published>2022-05-01T14:25:45+00:00</published></entry><entry><id>https://github.com/fangjian98/space/issues/1</id><title>remote Permission to git denied to github-actions[bot]</title><updated>2022-05-01T15:08:24.803002+00:00</updated><content type="html"><![CDATA[<p>Resolution:
+Settings - Workflow permissions - Read and write permissions.</p>
+<p><img src="https://user-images.githubusercontent.com/59403187/166147147-7f6e28b2-e8ee-47d3-8fb3-d7ed38ddcee4.png" alt="image" /></p>
+]]></content><link href="https://github.com/fangjian98/space/issues/1" rel="alternate"/><published>2022-05-01T13:03:15+00:00</published></entry></feed>
