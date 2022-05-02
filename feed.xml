@@ -1,13 +1,17 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<feed xmlns="http://www.w3.org/2005/Atom"><id>https://github.com/fangjian98/space</id><title>RSS feed of fangjian98's space</title><updated>2022-05-02T10:24:20.971694+00:00</updated><author><name>fangjian98</name><email>2360870585@qq.com</email></author><link href="https://github.com/fangjian98/space"/><link href="https://raw.githubusercontent.com/fangjian98/space/master/feed.xml" rel="self"/><generator uri="https://lkiesow.github.io/python-feedgen" version="0.9.0">python-feedgen</generator><entry><id>https://github.com/fangjian98/space/issues/11</id><title>再次测试删除相同issueid的备份文件2</title><updated>2022-05-02T10:24:21.188097+00:00</updated><content type="html"><![CDATA[<p>test py to backup </p>
-]]></content><link href="https://github.com/fangjian98/space/issues/11" rel="alternate"/><published>2022-05-02T07:59:42+00:00</published></entry><entry><id>https://github.com/fangjian98/space/issues/10</id><title>所有标签</title><updated>2022-05-02T10:24:21.291485+00:00</updated><content type="html"><![CDATA[<p><strong>如何创建标签</strong>：Issues -  Labels - New Label</p>
+<feed xmlns="http://www.w3.org/2005/Atom"><id>https://github.com/fangjian98/space</id><title>RSS feed of fangjian98's space</title><updated>2022-05-02T10:31:02.037365+00:00</updated><author><name>fangjian98</name><email>2360870585@qq.com</email></author><link href="https://github.com/fangjian98/space"/><link href="https://raw.githubusercontent.com/fangjian98/space/master/feed.xml" rel="self"/><generator uri="https://lkiesow.github.io/python-feedgen" version="0.9.0">python-feedgen</generator><entry><id>https://github.com/fangjian98/space/issues/10</id><title>所有标签</title><updated>2022-05-02T10:31:02.324145+00:00</updated><content type="html"><![CDATA[<p><strong>如何创建标签</strong>：Issues -  Labels - New Label</p>
 <p><img src="https://user-images.githubusercontent.com/59403187/166190597-174bd959-2b45-4401-af34-3ba6363ff6bc.png" alt="image" /></p>
 <p>填写Label的 Label name、Description、Color即可成功创建标签，当然你也可以后续修改标签内容。当你给Issues添加Label后，该Issue就会分类显示在README列表中了，相当于分类功能了。</p>
 <p><strong>所有标签类别</strong></p>
 <ul>
-<li>Friends</li>
+<li>
+<p>Top：置顶issues</p>
+</li>
+<li>
+<p>Friends：友情链接</p>
+</li>
 </ul>
-]]></content><link href="https://github.com/fangjian98/space/issues/10" rel="alternate"/><published>2022-05-02T05:02:02+00:00</published></entry><entry><id>https://github.com/fangjian98/space/issues/9</id><title>关于如何使用github issues记录博客</title><updated>2022-05-02T10:24:21.390134+00:00</updated><content type="html"><![CDATA[<h2>关于如何使用github issues记录博客</h2>
+]]></content><link href="https://github.com/fangjian98/space/issues/10" rel="alternate"/><category term="Top"/><published>2022-05-02T05:02:02+00:00</published></entry><entry><id>https://github.com/fangjian98/space/issues/9</id><title>关于如何使用github issues记录博客</title><updated>2022-05-02T10:31:02.470357+00:00</updated><content type="html"><![CDATA[<h2>关于如何使用github issues记录博客</h2>
 <p><strong>来源</strong></p>
 <p><a href="https://github.com/yihong0618/gitblog">https://github.com/yihong0618/gitblog</a></p>
 <p><strong>功能</strong></p>
@@ -81,10 +85,10 @@ TypeError: write() argument must be str, not None
 <ol start="5">
 <li>BACKUP里的文件并不是唯一，和Issue id并不是绑定的，当你修改某个存在的Issue的标题时，会再次生成一个<code>id_*.md</code>，不会删除或覆盖之前的文件，主要原因是main.py未优化此问题。</li>
 </ol>
-]]></content><link href="https://github.com/fangjian98/space/issues/9" rel="alternate"/><published>2022-05-01T15:31:24+00:00</published></entry><entry><id>https://github.com/fangjian98/space/issues/8</id><title>关于添加友情链接</title><updated>2022-05-02T10:24:21.516758+00:00</updated><content type="html"><![CDATA[<p>这个 Issue 是友情链接的 Issue, 如果你想加到友情链接里，请在这条 Issue 上评论，在仓库拥有者打心后:heart:会自动加到友情链接里。</p>
+]]></content><link href="https://github.com/fangjian98/space/issues/9" rel="alternate"/><category term="Top"/><published>2022-05-01T15:31:24+00:00</published></entry><entry><id>https://github.com/fangjian98/space/issues/8</id><title>关于添加友情链接</title><updated>2022-05-02T10:31:02.637151+00:00</updated><content type="html"><![CDATA[<p>这个 Issue 是友情链接的 Issue, 如果你想加到友情链接里，请在这条 Issue 上评论，在仓库拥有者打心后:heart:会自动加到友情链接里。</p>
 <p>格式如下（请参考我下面的 <a href="https://github.com/fangjian98/space/issues/8#issuecomment-1114264472">comment</a>）:
 冒号为中文冒号 ：</p>
 <p>名字：xxxxxx
 链接：xxxxxx
 描述：xxxxxx</p>
-]]></content><link href="https://github.com/fangjian98/space/issues/8" rel="alternate"/><category term="Friends"/><published>2022-05-01T15:18:07+00:00</published></entry></feed>
+]]></content><link href="https://github.com/fangjian98/space/issues/8" rel="alternate"/><category term="Friends"/><category term="Top"/><published>2022-05-01T15:18:07+00:00</published></entry></feed>
