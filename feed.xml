@@ -1,5 +1,8 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<feed xmlns="http://www.w3.org/2005/Atom"><id>https://github.com/fangjian98/space</id><title>RSS feed of fangjian98's space</title><updated>2022-05-01T15:33:17.453201+00:00</updated><author><name>fangjian98</name><email>2360870585@qq.com</email></author><link href="https://github.com/fangjian98/space"/><link href="https://raw.githubusercontent.com/fangjian98/space/master/feed.xml" rel="self"/><generator uri="https://lkiesow.github.io/python-feedgen" version="0.9.0">python-feedgen</generator><entry><id>https://github.com/fangjian98/space/issues/9</id><title>这个博客开源了</title><updated>2022-05-01T15:33:17.683723+00:00</updated><content type="html"><![CDATA[<p>虽然如此但也经历了几个阶段</p>
+<feed xmlns="http://www.w3.org/2005/Atom"><id>https://github.com/fangjian98/space</id><title>RSS feed of fangjian98's space</title><updated>2022-05-02T05:04:04.165735+00:00</updated><author><name>fangjian98</name><email>2360870585@qq.com</email></author><link href="https://github.com/fangjian98/space"/><link href="https://raw.githubusercontent.com/fangjian98/space/master/feed.xml" rel="self"/><generator uri="https://lkiesow.github.io/python-feedgen" version="0.9.0">python-feedgen</generator><entry><id>https://github.com/fangjian98/space/issues/10</id><title>所有标签</title><updated>2022-05-02T05:04:04.405058+00:00</updated><content type="html"><![CDATA[<ul>
+<li>Friends</li>
+</ul>
+]]></content><link href="https://github.com/fangjian98/space/issues/10" rel="alternate"/><published>2022-05-02T05:02:02+00:00</published></entry><entry><id>https://github.com/fangjian98/space/issues/9</id><title>这个博客开源了</title><updated>2022-05-02T05:04:04.526410+00:00</updated><content type="html"><![CDATA[<p>虽然如此但也经历了几个阶段</p>
 <p>纯粹的写issue
 写完issue后添加目录到README
 改成webhook用flask部署个callback 每次写完issue自动生成新的README
@@ -19,28 +22,28 @@ please delete all files in BACKUP folder(2020.11.26 add)
 <p>image</p>
 <p>需要把 env 中的 name 和 email 改成自己的</p>
 <p>image</p>
-]]></content><link href="https://github.com/fangjian98/space/issues/9" rel="alternate"/><published>2022-05-01T15:31:24+00:00</published></entry><entry><id>https://github.com/fangjian98/space/issues/8</id><title>add friends links info</title><updated>2022-05-01T15:33:17.798423+00:00</updated><content type="html"><![CDATA[<p>这个 Issue 是友情链接的 Issue, 如果你想加到友情链接里，请在这条 Issue 上评论，我打心后会自动加到友情链接里。感谢大家。</p>
+]]></content><link href="https://github.com/fangjian98/space/issues/9" rel="alternate"/><published>2022-05-01T15:31:24+00:00</published></entry><entry><id>https://github.com/fangjian98/space/issues/8</id><title>add friends links info</title><updated>2022-05-02T05:04:04.640390+00:00</updated><content type="html"><![CDATA[<p>这个 Issue 是友情链接的 Issue, 如果你想加到友情链接里，请在这条 Issue 上评论，我打心后会自动加到友情链接里。感谢大家。</p>
 <p>格式如下（请参考我下面的 comment）:
 冒号为中文冒号 ：</p>
 <p>名字：xxxxxx
 链接：xxxxxx
 描述：xxxxxx</p>
-]]></content><link href="https://github.com/fangjian98/space/issues/8" rel="alternate"/><published>2022-05-01T15:18:07+00:00</published></entry><entry><id>https://github.com/fangjian98/space/issues/7</id><title>This is my third blog</title><updated>2022-05-01T15:33:17.910010+00:00</updated><content type="html"><![CDATA[<h1>This is my third blog</h1>
+]]></content><link href="https://github.com/fangjian98/space/issues/8" rel="alternate"/><category term="Friends"/><published>2022-05-01T15:18:07+00:00</published></entry><entry><id>https://github.com/fangjian98/space/issues/7</id><title>This is my third blog</title><updated>2022-05-02T05:04:04.743772+00:00</updated><content type="html"><![CDATA[<h1>This is my third blog</h1>
 <p>hhh</p>
-]]></content><link href="https://github.com/fangjian98/space/issues/7" rel="alternate"/><published>2022-05-01T15:06:18+00:00</published></entry><entry><id>https://github.com/fangjian98/space/issues/6</id><title>This is my second blog</title><updated>2022-05-01T15:33:18.011788+00:00</updated><content type="html"><![CDATA[<h1>2022-05-01</h1>
+]]></content><link href="https://github.com/fangjian98/space/issues/7" rel="alternate"/><published>2022-05-01T15:06:18+00:00</published></entry><entry><id>https://github.com/fangjian98/space/issues/6</id><title>This is my second blog</title><updated>2022-05-02T05:04:04.850501+00:00</updated><content type="html"><![CDATA[<h1>2022-05-01</h1>
 <ol>
 <li>hhh</li>
 <li>xxx</li>
 <li>uuu</li>
 </ol>
-]]></content><link href="https://github.com/fangjian98/space/issues/6" rel="alternate"/><published>2022-05-01T14:41:46+00:00</published></entry><entry><id>https://github.com/fangjian98/space/issues/5</id><title>This is my first issue blog</title><updated>2022-05-01T15:33:18.111532+00:00</updated><content type="html"><![CDATA[<h1>Day1 2022-05-01</h1>
+]]></content><link href="https://github.com/fangjian98/space/issues/6" rel="alternate"/><published>2022-05-01T14:41:46+00:00</published></entry><entry><id>https://github.com/fangjian98/space/issues/5</id><title>This is my first issue blog</title><updated>2022-05-02T05:04:04.952255+00:00</updated><content type="html"><![CDATA[<h1>Day1 2022-05-01</h1>
 <ol>
 <li>Settings - Developer settings - GitHub Apps - Access Token</li>
 <li>Actions secrets</li>
 <li>修改workflow：替换分支、用户名、邮箱、AccessToken</li>
 <li>设置修改Workflow Permission</li>
 </ol>
-]]></content><link href="https://github.com/fangjian98/space/issues/5" rel="alternate"/><published>2022-05-01T14:25:45+00:00</published></entry><entry><id>https://github.com/fangjian98/space/issues/1</id><title>remote Permission to git denied to github-actions[bot]</title><updated>2022-05-01T15:33:18.212876+00:00</updated><content type="html"><![CDATA[<p>Resolution:
+]]></content><link href="https://github.com/fangjian98/space/issues/5" rel="alternate"/><published>2022-05-01T14:25:45+00:00</published></entry><entry><id>https://github.com/fangjian98/space/issues/1</id><title>remote Permission to git denied to github-actions[bot]</title><updated>2022-05-02T05:04:05.064533+00:00</updated><content type="html"><![CDATA[<p>Resolution:
 Settings - Workflow permissions - Read and write permissions.</p>
 <p><img src="https://user-images.githubusercontent.com/59403187/166147147-7f6e28b2-e8ee-47d3-8fb3-d7ed38ddcee4.png" alt="image" /></p>
 ]]></content><link href="https://github.com/fangjian98/space/issues/1" rel="alternate"/><published>2022-05-01T13:03:15+00:00</published></entry></feed>
