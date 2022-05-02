@@ -14,19 +14,55 @@
 5. 支持备份BACKUP
 
 **实现**
- 
-1. fork this repo (or just copy the file whatever)
-2. change github secret
-3. write issue and add label
-4. please delete all files in BACKUP folder(2020.11.26 add)
 
-关于如何生成github secret token
+1. Fork这个仓库或者拷贝几个必要文件( `.gthub/workflow/generate_readme.yml` `main.py` `requirements.txt` `.gitignore`)。
+2. 生成Token：[Personal access tokens]((https://github.com/settings/tokens))，点击New personal access token，填写Note、Expiration，把需要的`Select scopes`的都选上即可，用于使用[Github API](https://docs.github.com/)，完成后生成token，复制该token。
+3. 设置 Actions secrets：Settings - Secret - Actions secrets - new repository secret，填写Name和Value，Name自定义，Value为上一步生成是Token，Add secret即可。
+4. 修改`.gthub/workflow/generate_readme.yml`：需要把 env 中的 name 和 email 改成自己的，token name 换成你自己的即可。
+5. 现在就可以添加Issues和Labels，来愉快的记录博客了！
 
+**注意点**
 
-在[这里](https://github.com/settings/tokens) 点击 generate new token把需要的点上
-在你的repo 中更改 [secret](https://github.com/yihong0618/gitblog/issues/177) 中把刚生成的token设置进去
+1. Github Actions报错： remote Permission to xx/xx.git denied to github-actions[bot]
 
-更改workflow中的token name 换成你自己的（不要忘了secrets 点）
+解决方案：在仓库设置修改Workflow Permissions为Read and write permissions即可。
 
-需要把 env 中的 name 和 email 改成自己的
+![image](https://user-images.githubusercontent.com/59403187/166147147-7f6e28b2-e8ee-47d3-8fb3-d7ed38ddcee4.png)
 
+2. Github Actions运行成功，但未更新BACKUP和README.md
+
+查看log：发现未能提交新增文件
+
+```bash
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	BACKUP/1_remote.Permission.to.git.denied.to.github-actions[bot].md
+	BACKUP/5_This.is.my.first.issue.blog.md
+	BACKUP/6_This.is.my.second.blog.md
+	README.md
+	feed.xml
+
+nothing added to commit but untracked files present (use "git add" to track)
+nothing to commit
+Everything up-to-date
+```
+解决方案：修改 `.gthub/workflow/generate_readme.yml`
+
+```bash
+#  将
+git commit -a -m 'update new blog' || echo "nothing to commit"
+# 修改为
+git add -A
+git commit -m 'update new blog' || echo "nothing to commit"
+```
+4. 原本`.gthub/workflow/generate_readme.yml`的小错误
+
+```bash
+# 将
+git config --local user.name "${{ env.GITHUB_EMAIL }}"
+# 修改为
+git config --local user.name "${{ env.GITHUB_NAME }}"
+```

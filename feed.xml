@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<feed xmlns="http://www.w3.org/2005/Atom"><id>https://github.com/fangjian98/space</id><title>RSS feed of fangjian98's space</title><updated>2022-05-02T06:00:47.335847+00:00</updated><author><name>fangjian98</name><email>2360870585@qq.com</email></author><link href="https://github.com/fangjian98/space"/><link href="https://raw.githubusercontent.com/fangjian98/space/master/feed.xml" rel="self"/><generator uri="https://lkiesow.github.io/python-feedgen" version="0.9.0">python-feedgen</generator><entry><id>https://github.com/fangjian98/space/issues/10</id><title>所有标签</title><updated>2022-05-02T06:00:47.624304+00:00</updated><content type="html"><![CDATA[<p><strong>如何创建标签</strong>：Issues -  Labels - New Label</p>
+<feed xmlns="http://www.w3.org/2005/Atom"><id>https://github.com/fangjian98/space</id><title>RSS feed of fangjian98's space</title><updated>2022-05-02T06:34:07.226199+00:00</updated><author><name>fangjian98</name><email>2360870585@qq.com</email></author><link href="https://github.com/fangjian98/space"/><link href="https://raw.githubusercontent.com/fangjian98/space/master/feed.xml" rel="self"/><generator uri="https://lkiesow.github.io/python-feedgen" version="0.9.0">python-feedgen</generator><entry><id>https://github.com/fangjian98/space/issues/10</id><title>所有标签</title><updated>2022-05-02T06:34:07.523711+00:00</updated><content type="html"><![CDATA[<p><strong>如何创建标签</strong>：Issues -  Labels - New Label</p>
 <p><img src="https://user-images.githubusercontent.com/59403187/166190597-174bd959-2b45-4401-af34-3ba6363ff6bc.png" alt="image" /></p>
 <p>填写Label的 Label name、Description、Color即可成功创建标签，当然你也可以后续修改标签内容。当你给Issues添加Label后，该Issue就会分类显示在README列表中了，相当于分类功能了。</p>
 <p><strong>所有标签类别</strong></p>
 <ul>
 <li>Friends</li>
 </ul>
-]]></content><link href="https://github.com/fangjian98/space/issues/10" rel="alternate"/><published>2022-05-02T05:02:02+00:00</published></entry><entry><id>https://github.com/fangjian98/space/issues/9</id><title>关于如何使用github issues记录博客</title><updated>2022-05-02T06:00:47.755945+00:00</updated><content type="html"><![CDATA[<h2>关于如何使用github issues记录博客</h2>
+]]></content><link href="https://github.com/fangjian98/space/issues/10" rel="alternate"/><published>2022-05-02T05:02:02+00:00</published></entry><entry><id>https://github.com/fangjian98/space/issues/9</id><title>关于如何使用github issues记录博客</title><updated>2022-05-02T06:34:07.671199+00:00</updated><content type="html"><![CDATA[<h2>关于如何使用github issues记录博客</h2>
 <p><strong>来源</strong></p>
 <p><a href="https://github.com/yihong0618/gitblog">https://github.com/yihong0618/gitblog</a></p>
 <p><strong>功能</strong></p>
@@ -19,38 +19,74 @@
 </ol>
 <p><strong>实现</strong></p>
 <ol>
-<li>fork this repo (or just copy the file whatever)</li>
-<li>change github secret</li>
-<li>write issue and add label</li>
-<li>please delete all files in BACKUP folder(2020.11.26 add)</li>
+<li>Fork这个仓库或者拷贝几个必要文件( <code>.gthub/workflow/generate_readme.yml</code> <code>main.py</code> <code>requirements.txt</code> <code>.gitignore</code>)。</li>
+<li>生成Token：<a href="(https://github.com/settings/tokens)">Personal access tokens</a>，点击New personal access token，填写Note、Expiration，把需要的<code>Select scopes</code>的都选上即可，用于使用<a href="https://docs.github.com/">Github API</a>，完成后生成token，复制该token。</li>
+<li>设置 Actions secrets：Settings - Secret - Actions secrets - new repository secret，填写Name和Value，Name自定义，Value为上一步生成是Token，Add secret即可。</li>
+<li>修改<code>.gthub/workflow/generate_readme.yml</code>：需要把 env 中的 name 和 email 改成自己的，token name 换成你自己的即可。</li>
+<li>现在就可以添加Issues和Labels，来愉快的记录博客了！</li>
 </ol>
-<p>关于如何生成github secret token</p>
-<p>在<a href="https://github.com/settings/tokens">这里</a> 点击 generate new token把需要的点上
-在你的repo 中更改 <a href="https://github.com/yihong0618/gitblog/issues/177">secret</a> 中把刚生成的token设置进去</p>
-<p>更改workflow中的token name 换成你自己的（不要忘了secrets 点）</p>
-<p>需要把 env 中的 name 和 email 改成自己的</p>
-]]></content><link href="https://github.com/fangjian98/space/issues/9" rel="alternate"/><published>2022-05-01T15:31:24+00:00</published></entry><entry><id>https://github.com/fangjian98/space/issues/8</id><title>关于添加友情链接</title><updated>2022-05-02T06:00:47.903898+00:00</updated><content type="html"><![CDATA[<p>这个 Issue 是友情链接的 Issue, 如果你想加到友情链接里，请在这条 Issue 上评论，在仓库拥有者打心后:heart:会自动加到友情链接里。</p>
+<p><strong>注意点</strong></p>
+<ol>
+<li>Github Actions报错： remote Permission to xx/xx.git denied to github-actions[bot]</li>
+</ol>
+<p>解决方案：在仓库设置修改Workflow Permissions为Read and write permissions即可。</p>
+<p><img src="https://user-images.githubusercontent.com/59403187/166147147-7f6e28b2-e8ee-47d3-8fb3-d7ed38ddcee4.png" alt="image" /></p>
+<ol start="2">
+<li>Github Actions运行成功，但未更新BACKUP和README.md</li>
+</ol>
+<p>查看log：发现未能提交新增文件</p>
+<pre><code class="language-bash">On branch main
+Your branch is up to date with &#x27;origin/main&#x27;.
+
+Untracked files:
+  (use &quot;git add &lt;file&gt;...&quot; to include in what will be committed)
+	BACKUP/1_remote.Permission.to.git.denied.to.github-actions[bot].md
+	BACKUP/5_This.is.my.first.issue.blog.md
+	BACKUP/6_This.is.my.second.blog.md
+	README.md
+	feed.xml
+
+nothing added to commit but untracked files present (use &quot;git add&quot; to track)
+nothing to commit
+Everything up-to-date
+</code></pre>
+<p>解决方案：修改 <code>.gthub/workflow/generate_readme.yml</code></p>
+<pre><code class="language-bash">#  将
+git commit -a -m &#x27;update new blog&#x27; || echo &quot;nothing to commit&quot;
+# 修改为
+git add -A
+git commit -m &#x27;update new blog&#x27; || echo &quot;nothing to commit&quot;
+</code></pre>
+<ol start="4">
+<li>原本<code>.gthub/workflow/generate_readme.yml</code>的小错误</li>
+</ol>
+<pre><code class="language-bash"># 将
+git config --local user.name &quot;${{ env.GITHUB_EMAIL }}&quot;
+# 修改为
+git config --local user.name &quot;${{ env.GITHUB_NAME }}&quot;
+</code></pre>
+]]></content><link href="https://github.com/fangjian98/space/issues/9" rel="alternate"/><published>2022-05-01T15:31:24+00:00</published></entry><entry><id>https://github.com/fangjian98/space/issues/8</id><title>关于添加友情链接</title><updated>2022-05-02T06:34:07.817713+00:00</updated><content type="html"><![CDATA[<p>这个 Issue 是友情链接的 Issue, 如果你想加到友情链接里，请在这条 Issue 上评论，在仓库拥有者打心后:heart:会自动加到友情链接里。</p>
 <p>格式如下（请参考我下面的 <a href="https://github.com/fangjian98/space/issues/8#issuecomment-1114264472">comment</a>）:
 冒号为中文冒号 ：</p>
 <p>名字：xxxxxx
 链接：xxxxxx
 描述：xxxxxx</p>
-]]></content><link href="https://github.com/fangjian98/space/issues/8" rel="alternate"/><category term="Friends"/><published>2022-05-01T15:18:07+00:00</published></entry><entry><id>https://github.com/fangjian98/space/issues/7</id><title>This is my third blog</title><updated>2022-05-02T06:00:48.055833+00:00</updated><content type="html"><![CDATA[<h1>This is my third blog</h1>
+]]></content><link href="https://github.com/fangjian98/space/issues/8" rel="alternate"/><category term="Friends"/><published>2022-05-01T15:18:07+00:00</published></entry><entry><id>https://github.com/fangjian98/space/issues/7</id><title>This is my third blog</title><updated>2022-05-02T06:34:07.956189+00:00</updated><content type="html"><![CDATA[<h1>This is my third blog</h1>
 <p>hhh</p>
-]]></content><link href="https://github.com/fangjian98/space/issues/7" rel="alternate"/><published>2022-05-01T15:06:18+00:00</published></entry><entry><id>https://github.com/fangjian98/space/issues/6</id><title>This is my second blog</title><updated>2022-05-02T06:00:48.179031+00:00</updated><content type="html"><![CDATA[<h1>2022-05-01</h1>
+]]></content><link href="https://github.com/fangjian98/space/issues/7" rel="alternate"/><published>2022-05-01T15:06:18+00:00</published></entry><entry><id>https://github.com/fangjian98/space/issues/6</id><title>This is my second blog</title><updated>2022-05-02T06:34:08.112581+00:00</updated><content type="html"><![CDATA[<h1>2022-05-01</h1>
 <ol>
 <li>hhh</li>
 <li>xxx</li>
 <li>uuu</li>
 </ol>
-]]></content><link href="https://github.com/fangjian98/space/issues/6" rel="alternate"/><published>2022-05-01T14:41:46+00:00</published></entry><entry><id>https://github.com/fangjian98/space/issues/5</id><title>This is my first issue blog</title><updated>2022-05-02T06:00:48.304131+00:00</updated><content type="html"><![CDATA[<h1>Day1 2022-05-01</h1>
+]]></content><link href="https://github.com/fangjian98/space/issues/6" rel="alternate"/><published>2022-05-01T14:41:46+00:00</published></entry><entry><id>https://github.com/fangjian98/space/issues/5</id><title>This is my first issue blog</title><updated>2022-05-02T06:34:08.245651+00:00</updated><content type="html"><![CDATA[<h1>Day1 2022-05-01</h1>
 <ol>
 <li>Settings - Developer settings - GitHub Apps - Access Token</li>
 <li>Actions secrets</li>
 <li>修改workflow：替换分支、用户名、邮箱、AccessToken</li>
 <li>设置修改Workflow Permission</li>
 </ol>
-]]></content><link href="https://github.com/fangjian98/space/issues/5" rel="alternate"/><published>2022-05-01T14:25:45+00:00</published></entry><entry><id>https://github.com/fangjian98/space/issues/1</id><title>remote Permission to git denied to github-actions[bot]</title><updated>2022-05-02T06:00:48.442949+00:00</updated><content type="html"><![CDATA[<p>Resolution:
+]]></content><link href="https://github.com/fangjian98/space/issues/5" rel="alternate"/><published>2022-05-01T14:25:45+00:00</published></entry><entry><id>https://github.com/fangjian98/space/issues/1</id><title>remote Permission to git denied to github-actions[bot]</title><updated>2022-05-02T06:34:08.388795+00:00</updated><content type="html"><![CDATA[<p>Resolution:
 Settings - Workflow permissions - Read and write permissions.</p>
 <p><img src="https://user-images.githubusercontent.com/59403187/166147147-7f6e28b2-e8ee-47d3-8fb3-d7ed38ddcee4.png" alt="image" /></p>
 ]]></content><link href="https://github.com/fangjian98/space/issues/1" rel="alternate"/><published>2022-05-01T13:03:15+00:00</published></entry></feed>
