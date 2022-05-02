@@ -9,4 +9,3 @@ My personal blog using issues and GitHub Actions.
 - [所有标签](https://github.com/fangjian98/space/issues/10)--2022-05-02
 - [关于如何使用github issues记录博客](https://github.com/fangjian98/space/issues/9)--2022-05-01
 - [关于添加友情链接](https://github.com/fangjian98/space/issues/8)--2022-05-01
-- [This is my first issue blog](https://github.com/fangjian98/space/issues/5)--2022-05-01
