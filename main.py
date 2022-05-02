@@ -274,6 +274,7 @@ def main(token, repo_name, issue_number=None, dir_name=BACKUP_DIR):
 
 
 def save_issue(issue, me, dir_name=BACKUP_DIR):
+    delete_same_id_issue(f"{issue.number}_", dir_name)
     md_name = os.path.join(
         dir_name, f"{issue.number}_{issue.title.replace(' ', '.')}.md"
     )
@@ -285,6 +286,15 @@ def save_issue(issue, me, dir_name=BACKUP_DIR):
                 if is_me(c, me):
                     f.write("\n\n---\n\n")
                     f.write(c.body)
+
+
+def delete_same_id_issue(issueid, rootdir=BACKUP_DIR):
+    for fileordir in os.scandir(rootdir):
+        if fileordir.is_dir():
+            findfile(issueid, fileordir.path)
+        else:
+            if fileordir.name.startswith(issueid):
+                os.remove(os.path.join(rootdir, fileordir.name))
 
 
 if __name__ == "__main__":
